@@ -32,5 +32,5 @@ do
 	sudo make
 	sudo make install
 	cd ../../
-	sudo rm -rf glibc-${GLIBC_VERSION} && rm glibc-${GLIBC_VERSION}.tar.gz
+	sudo rm glibc-${GLIBC_VERSION}.tar.gz
 done
