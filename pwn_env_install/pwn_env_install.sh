@@ -67,7 +67,7 @@ sudo apt-get install g++-multilib -y
 
 # install one_gadget
 echo "install one_gadget"
-gem install one_gadget
+sudo gem install one_gadget
 
 
 # install patchelf
