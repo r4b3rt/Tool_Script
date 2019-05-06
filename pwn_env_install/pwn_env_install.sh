@@ -23,6 +23,13 @@ sudo apt-get update -y
 echo "install curl"
 sudo apt install curl -y
 
+# install ruby
+echo "install ruby"
+sudo apt-get install ruby -y
+
+echo "install gem"
+sudo apt-get install gem -y
+
 # install pip
 echo "install python-pip"
 sudo apt install python-pip -y
@@ -57,6 +64,11 @@ echo "\tgcc-multilib"
 sudo apt-get install gcc-multilib -y
 echo "\tg++-multilib"
 sudo apt-get install g++-multilib -y
+
+# install one_gadget
+echo "install one_gadget"
+gem install one_gadget
+
 
 # install patchelf
 echo "install patchelf"
