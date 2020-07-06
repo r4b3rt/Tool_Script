@@ -1,7 +1,7 @@
 #!/bin/sh
 # Date: 2019-04-10
 # Author: raycp
-# Description: pwn environment install script for ubuntu
+# Description: pwn environment install script for ubuntu 18.04
 # Fiel: pwn_env_install.sh
 
 # update source list
@@ -10,10 +10,16 @@ echo "updating apt source"
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo chmod 666 /etc/apt/sources.list
 ## update
-echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse > /etc/apt/sources.list
-echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse >> /etc/apt/sources.list
-echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse >> /etc/apt/sources.list
-echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse >> /etc/apt/sources.list
+echo deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  > /etc/apt/sources.list
+echo deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  >> /etc/apt/sources.list
+echo deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  >> /etc/apt/sources.list
+echo deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  >> /etc/apt/sources.list
+echo deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  >> /etc/apt/sources.list
+echo deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  >> /etc/apt/sources.list
+echo deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  >> /etc/apt/sources.list
+echo deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  >> /etc/apt/sources.list
+echo deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  >> /etc/apt/sources.list
+echo deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  >> /etc/apt/sources.list
 ## restore 
 sudo chmod 660 /etc/apt/sources.list
 ## update
